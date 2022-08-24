@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  api-playlist:
+    container_name: api-playlist
+    build: .
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    depends_on:
+      - db_mainframe
+    volumes:
+      - .:/app
+
+  db_mainframe:
+    container_name: db-playlist
+    image: postgres:latest
+    ports:
+      - 5435:5432
+    env_file:
+      - .env
