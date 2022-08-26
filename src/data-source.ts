@@ -3,7 +3,7 @@ import "dotenv/config";
 
 const AppDataSource = new DataSource({
   type: "postgres",
-  host: process.env.HOST,
+  host: process.env.DB_HOST,
   port: Number(process.env.POSTGRES_PORT),
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
