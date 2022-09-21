@@ -13,4 +13,4 @@ const validationMiddleware =
       return res.status(400).json({ message: error.errors?.join(", ") });
     }
   };
-export default validationMiddleware;
+export { validationMiddleware };

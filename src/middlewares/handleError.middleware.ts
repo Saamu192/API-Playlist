@@ -13,4 +13,4 @@ const handleErrorMiddleware = async (
   return res.status(500).json({ message: "Internal server error" });
 };
 
-export default handleErrorMiddleware;
+export { handleErrorMiddleware };

@@ -14,4 +14,4 @@ const listSongsController = async (req: Request, res: Response) => {
   return res.json(songs);
 };
 
-export { createSongService, listSongsController };
+export { createSongsController, listSongsController };

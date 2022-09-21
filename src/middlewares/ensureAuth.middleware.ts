@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import jwt, { decode } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import "dotenv/config";
 
 const ensureAuthMiddlewate = async (
@@ -30,3 +30,5 @@ const ensureAuthMiddlewate = async (
     }
   );
 };
+
+export { ensureAuthMiddlewate };
